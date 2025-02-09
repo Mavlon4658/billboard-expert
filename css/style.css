@@ -161,4 +161,27 @@ body {
 .object-sec .list .line {
   border-bottom: 1px dotted #dee2e6;
   transform: translateY(-4px);
+}
+
+.map-tabs .nav-link {
+  padding: 8px 50px;
+  color: #222222;
+}
+@media (max-width: 768px) {
+  .map-tabs .nav-link {
+    padding: 8px;
+  }
+}
+.map-tabs .nav-link.active {
+  color: #005bff;
+}
+@media (max-width: 992px) {
+  .map-tabs iframe {
+    height: 500px;
+  }
+}
+@media (max-width: 768px) {
+  .map-tabs iframe {
+    height: 367px;
+  }
 }/*# sourceMappingURL=style.css.map */
