@@ -188,20 +188,81 @@ body {
 }
 
 .offcanvas-modal {
-  padding: 28px 38px;
   width: 452px !important;
+  overflow-x: hidden;
+  padding: 28px 38px;
+  box-sizing: border-box;
 }
 @media (max-width: 700px) {
   .offcanvas-modal {
     width: 100% !important;
     margin: 0;
-    padding: 30px 12px;
+    padding: 30px 12px 2px 12px;
     border: none !important;
   }
 }
 .offcanvas-modal .modal-close {
   min-width: 16px;
   min-height: 16px;
+}
+.offcanvas-modal .modal-btns {
+  display: flex;
+  margin: 236px -12px 0 -12px;
+}
+.offcanvas-modal .modal-btns a {
+  flex: 1;
+}
+.offcanvas-modal .modal-btns .success-btn,
+.offcanvas-modal .modal-btns .primary-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #fff;
+  padding: 6px;
+  justify-content: center;
+}
+.offcanvas-modal .modal-btns .success-btn {
+  background: #25d366;
+}
+.offcanvas-modal .modal-btns .primary-btn {
+  background: #0088cc;
+}
+.offcanvas-modal .cart-box {
+  width: 83px;
+  height: 83px;
+  background: #198754;
+  z-index: 100;
+  left: 95px;
+  bottom: 77px;
+  animation: pulse 2s infinite;
+}
+.offcanvas-modal .cart-box:hover {
+  animation-play-state: paused;
+}
+.offcanvas-modal .cart-box .count {
+  position: absolute;
+  bottom: 11px;
+  right: 15px;
+  background: #f10e11;
+  font-size: 14px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 5px;
+  border-radius: 50%;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(25, 135, 84, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(25, 135, 84, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(25, 135, 84, 0);
+  }
 }
 
 .text-bg-outline-primary {

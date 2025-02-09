@@ -344,136 +344,166 @@
 
   </div>
 
-  <div class="offcanvas overflow-auto offcanvas-modal offcanvas-end" tabindex="-1"
-    id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
-    <div class="d-flex justify-content-between align-items-start gap-2">
-      <h5 class="fs-3 fw-bold" id="offcanvasLeftLabel">г.Химки, Новокуркинское шоссе, 460 м после поворота с ул.
-        Строителей...</h5>
-      <button type="button" class="modal-close" data-bs-dismiss="offcanvas" aria-label="close">
-        <img src="img/close.svg" alt="" width="16" height="16">
-      </button>
+  <div class="offcanvas overflow-auto offcanvas-modal offcanvas-end" tabindex="-1" id="offcanvasLeft"
+    aria-labelledby="offcanvasLeftLabel">
+    <div class="position-fixed cart-box d-md-flex justify-content-center align-items-center rounded-circle d-none">
+      <img src="img/cart.svg" alt="">
+      <span class="count">10</span>
     </div>
-    <div class="mt-2">
-      <img class="rounded-3 w-100 object-fit-cover mb-1" src="img/modal-img-1.png" alt="" height="235">
-      <a class="d-flex align-items-center justify-content-center gap-1 fs-6 text-primary mt-2 mb-4" href="#!">
-        <img src="img/map.svg" alt="">
-        <span>Показать на панормаме</span>
-      </a>
-      <div class="col-10">
-        <label for="" class="fs-4 mb-4">Стоимость:</label>
-        <select class="form-select fs-6 py-2" aria-label="Default select example">
-          <option value="" selected>Февраль: 10'000 Руб.</option>
-          <option value="">Март: 10'000 Руб.</option>
-          <option value="">Апрель: 10'000 Руб.</option>
-          <option value="">Май: 10'000 Руб.</option>
-          <option value="">Июнь: 10'000 Руб.</option>
-          <option value="">Июль: 10'000 Руб.</option>
-          <option value="">Август: 10'000 Руб.</option>
-          <option value="">Сентябрь: 10'000 Руб.</option>
-          <option value="">Октябрь: 10'000 Руб.</option>
-          <option value="">Ноябрь: 10'000 Руб.</option>
-          <option value="">Декабрь: 10'000 Руб.</option>
-        </select>
+    <div class="d-flex flex-column justify-content-between">
+      <div class="d-flex justify-content-between align-items-start gap-2">
+        <h5 class="fs-3 fw-bold" id="offcanvasLeftLabel">г.Химки, Новокуркинское шоссе, 460 м после поворота с ул.
+          Строителей...</h5>
+        <button type="button" class="modal-close" data-bs-dismiss="offcanvas" aria-label="close">
+          <img src="img/close.svg" alt="" width="16" height="16">
+        </button>
       </div>
-      <ul class="w-100 charaker-list mt-4 pt-1">
-        <li class="d-flex justify-content-between fs-6 gap-1">
-          <span class="fw-bold text-nowrap">Сторона</span>
-          <div class="w-100 line"></div>
-          <span class="text-nowrap">А</span>
-        </li>
-        <li class="d-flex justify-content-between fs-6 gap-1">
-          <span class="fw-bold text-nowrap ">GID</span>
-          <div class="w-100 line"></div>
-          <span class="">MOBB13454A</span>
-        </li>
-        <li class="d-flex justify-content-between fs-6 gap-1">
-          <span class="fw-bold text-nowrap">Направление</span>
-          <div class="w-100 line"></div>
-          <span class="text-nowrap">от РУШ</span>
-        </li>
-        <li class="d-flex justify-content-between fs-6 gap-1">
-          <span class="fw-bold text-nowrap">Регион</span>
-          <div class="w-100 line"></div>
-          <span class="text-nowrap">Московская область</span>
-        </li>
-        <li class="d-flex justify-content-between fs-6 gap-1">
-          <span class="fw-bold text-nowrap">Город/Район</span>
-          <div class="w-100 line"></div>
-          <span class="text-nowrap">Одинцовский</span>
-        </li>
-        <li class="d-flex justify-content-between fs-6 gap-1">
-          <span class="fw-bold text-nowrap">Тип</span>
-          <div class="w-100 line"></div>
-          <span class="text-nowrap">Щит 6х3</span>
-        </li>
-        <li class="d-flex justify-content-between fs-6 gap-1">
-          <span class="fw-bold text-nowrap">Способ показа</span>
-          <div class="w-100 line"></div>
-          <span class="text-nowrap">Статический</span>
-        </li>
-        <li class="d-flex justify-content-between fs-6 gap-1">
-          <span class="fw-bold text-nowrap">Свет</span>
-          <div class="w-100 line"></div>
-          <span class="text-nowrap">Да</span>
-        </li>
-        <li class="d-flex justify-content-between fs-6 gap-1">
-          <span class="fw-bold text-nowrap">GPR</span>
-          <div class="w-100 line"></div>
-          <span class="text-nowrap">2.4</span>
-        </li>
-        <li class="d-flex justify-content-between fs-6 gap-1">
-          <span class="fw-bold text-nowrap">OTS</span>
-          <div class="w-100 line"></div>
-          <span class="text-nowrap">9.21</span>
-        </li>
-        <li class="d-flex justify-content-between fs-6 gap-1">
-          <span class="fw-bold text-nowrap">Материал постера</span>
-          <div class="w-100 line"></div>
-          <span class="text-nowrap">Винил</span>
-        </li>
-      </ul>
-      <div class="d-flex flex-column gap-4 pt-5 mt-5">
-        <a class="btn btn-primary fs-6 w-100" href="#!">Быстрый заказ</a>
-        <a class="btn btn-success fs-6 w-100" href="#!">В корзину</a>
-        <h3 class="fs-5">Другие варианты локации:</h3>
-        <div class="d-flex gap-2 flex-column">
-          <div class="row">
-            <div class="col-4 px-2">
-              <span class="badge fs-6 fw-normal w-100 text-bg-primary">MSCF05731А</span>
-            </div>
-            <div class="col-4 px-2">
-              <span class="badge fs-6 fw-normal w-100 text-bg-outline-primary">MSCF05731B</span>
-            </div>
-            <div class="col-4 px-2">
-              <span class="badge fs-6 fw-normal w-100 text-bg-outline-primary">MSCF05731C</span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-4 px-2">
-              <span class="badge fs-6 fw-normal w-100 text-bg-outline-primary">MSCF05731C</span>
-            </div>
-            <div class="col-4 px-2">
-              <span class="badge fs-6 fw-normal w-100 text-bg-outline-primary">MSCF05731B</span>
-            </div>
-            <div class="col-4 px-2">
-              <span class="badge fs-6 fw-normal w-100 text-bg-outline-primary">MSCF05731C</span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-4 px-2">
-              <span class="badge fs-6 fw-normal w-100 text-bg-outline-primary">MSCF05731C</span>
-            </div>
-            <div class="col-4 px-2">
-              <span class="badge fs-6 fw-normal w-100 text-bg-outline-primary">MSCF05731B</span>
-            </div>
-            <div class="col-4 px-2">
-              <span class="badge fs-6 fw-normal w-100 text-bg-outline-primary">MSCF05731C</span>
-            </div>
-          </div>
+      <div class="mt-2">
+        <img class="rounded-3 w-100 object-fit-cover mb-1" src="img/modal-img-1.png" data-bs-toggle="modal"
+          data-bs-target="#imageModal" alt="" height="235">
+        <a class="d-flex align-items-center justify-content-center gap-1 fs-6 text-primary mt-2 mb-4" href="#!">
+          <img src="img/map.svg" alt="">
+          <span>Показать на панормаме</span>
+        </a>
+        <div class="col-10">
+          <label for="" class="fs-4 mb-4">Стоимость:</label>
+          <select class="form-select fs-6 py-2" aria-label="Default select example">
+            <option value="" selected>Февраль: 10'000 Руб.</option>
+            <option value="">Март: 10'000 Руб.</option>
+            <option value="">Апрель: 10'000 Руб.</option>
+            <option value="">Май: 10'000 Руб.</option>
+            <option value="">Июнь: 10'000 Руб.</option>
+            <option value="">Июль: 10'000 Руб.</option>
+            <option value="">Август: 10'000 Руб.</option>
+            <option value="">Сентябрь: 10'000 Руб.</option>
+            <option value="">Октябрь: 10'000 Руб.</option>
+            <option value="">Ноябрь: 10'000 Руб.</option>
+            <option value="">Декабрь: 10'000 Руб.</option>
+          </select>
         </div>
-        <a class="btn btn-outline-primary fs-6 w-100" href="object.html">Подробнее</a>
-        <a class="btn btn-outline-danger fs-6 w-100" data-bs-dismiss="offcanvas" aria-label="close"
-          href="object.html">Закрыть</a>
+        <ul class="w-100 charaker-list mt-4 pt-1">
+          <li class="d-flex justify-content-between fs-6 gap-1">
+            <span class="fw-bold text-nowrap">Сторона</span>
+            <div class="w-100 line"></div>
+            <span class="text-nowrap">А</span>
+          </li>
+          <li class="d-flex justify-content-between fs-6 gap-1">
+            <span class="fw-bold text-nowrap ">GID</span>
+            <div class="w-100 line"></div>
+            <span class="">MOBB13454A</span>
+          </li>
+          <li class="d-flex justify-content-between fs-6 gap-1">
+            <span class="fw-bold text-nowrap">Направление</span>
+            <div class="w-100 line"></div>
+            <span class="text-nowrap">от РУШ</span>
+          </li>
+          <li class="d-flex justify-content-between fs-6 gap-1">
+            <span class="fw-bold text-nowrap">Регион</span>
+            <div class="w-100 line"></div>
+            <span class="text-nowrap">Московская область</span>
+          </li>
+          <li class="d-flex justify-content-between fs-6 gap-1">
+            <span class="fw-bold text-nowrap">Город/Район</span>
+            <div class="w-100 line"></div>
+            <span class="text-nowrap">Одинцовский</span>
+          </li>
+          <li class="d-flex justify-content-between fs-6 gap-1">
+            <span class="fw-bold text-nowrap">Тип</span>
+            <div class="w-100 line"></div>
+            <span class="text-nowrap">Щит 6х3</span>
+          </li>
+          <li class="d-flex justify-content-between fs-6 gap-1">
+            <span class="fw-bold text-nowrap">Способ показа</span>
+            <div class="w-100 line"></div>
+            <span class="text-nowrap">Статический</span>
+          </li>
+          <li class="d-flex justify-content-between fs-6 gap-1">
+            <span class="fw-bold text-nowrap">Свет</span>
+            <div class="w-100 line"></div>
+            <span class="text-nowrap">Да</span>
+          </li>
+          <li class="d-flex justify-content-between fs-6 gap-1">
+            <span class="fw-bold text-nowrap">GPR</span>
+            <div class="w-100 line"></div>
+            <span class="text-nowrap">2.4</span>
+          </li>
+          <li class="d-flex justify-content-between fs-6 gap-1">
+            <span class="fw-bold text-nowrap">OTS</span>
+            <div class="w-100 line"></div>
+            <span class="text-nowrap">9.21</span>
+          </li>
+          <li class="d-flex justify-content-between fs-6 gap-1">
+            <span class="fw-bold text-nowrap">Материал постера</span>
+            <div class="w-100 line"></div>
+            <span class="text-nowrap">Винил</span>
+          </li>
+        </ul>
+        <div class="d-flex flex-column gap-4 pt-5 mt-5">
+          <a class="btn btn-primary fs-6 w-100" href="#!">Быстрый заказ</a>
+          <a class="btn btn-success fs-6 w-100" href="#!">В корзину</a>
+          <h3 class="fs-5">Другие варианты локации:</h3>
+          <div class="d-flex gap-2 flex-column">
+            <div class="row">
+              <div class="col-4 px-2">
+                <span class="badge fs-6 fw-normal w-100 text-bg-primary">MSCF05731А</span>
+              </div>
+              <div class="col-4 px-2">
+                <span class="badge fs-6 fw-normal w-100 text-bg-outline-primary">MSCF05731B</span>
+              </div>
+              <div class="col-4 px-2">
+                <span class="badge fs-6 fw-normal w-100 text-bg-outline-primary">MSCF05731C</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4 px-2">
+                <span class="badge fs-6 fw-normal w-100 text-bg-outline-primary">MSCF05731C</span>
+              </div>
+              <div class="col-4 px-2">
+                <span class="badge fs-6 fw-normal w-100 text-bg-outline-primary">MSCF05731B</span>
+              </div>
+              <div class="col-4 px-2">
+                <span class="badge fs-6 fw-normal w-100 text-bg-outline-primary">MSCF05731C</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4 px-2">
+                <span class="badge fs-6 fw-normal w-100 text-bg-outline-primary">MSCF05731C</span>
+              </div>
+              <div class="col-4 px-2">
+                <span class="badge fs-6 fw-normal w-100 text-bg-outline-primary">MSCF05731B</span>
+              </div>
+              <div class="col-4 px-2">
+                <span class="badge fs-6 fw-normal w-100 text-bg-outline-primary">MSCF05731C</span>
+              </div>
+            </div>
+          </div>
+          <a class="btn btn-outline-primary fs-6 w-100" href="object.html">Подробнее</a>
+          <a class="btn btn-outline-danger fs-6 w-100" data-bs-dismiss="offcanvas" aria-label="close"
+            href="object.html">Закрыть</a>
+        </div>
+      </div>
+      <div class="modal-btns d-md-none">
+        <a class="success-btn" href="#!">
+          <img src="img/white-whatsapp.svg" alt="">
+          <span>WhatsApp</span>
+        </a>
+        <a class="primary-btn" href="#!">
+          <img src="img/white-telegram.svg" alt="">
+          <span>Telegram</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <button type="button" class="modal-close ms-auto mt-2 me-2" data-bs-dismiss="modal" aria-label="Close">
+          <img src="img/close.svg" alt="Close" width="16" height="16">
+        </button>
+        <div class="modal-body">
+          <img src="img/modal-img-1.png" class="img-fluid w-100 h-100" alt="Katta Tasvir">
+        </div>
       </div>
     </div>
   </div>
