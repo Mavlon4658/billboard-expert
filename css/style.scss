@@ -80,8 +80,10 @@ body {
   &-6 {
     font-size: 14px !important;
   }
+  &-7 {
+    font-size: 19px !important;
+  }
 }
-
 .btn {
   padding: 11.5px 28px;
 
@@ -95,7 +97,7 @@ body {
 .main-container {
   max-width: 1920px;
   margin: 0 auto;
-
+  
   @media (max-width: 768px) {
     max-width: calc(100% - 24px);
   }
