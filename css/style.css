@@ -71,6 +71,9 @@ body {
 .fs-7 {
   font-size: 19px !important;
 }
+.fs-sm {
+  font-size: 12px;
+}
 
 .btn {
   padding: 11.5px 28px;
