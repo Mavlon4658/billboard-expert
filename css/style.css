@@ -145,12 +145,18 @@ body {
   padding: 10.5px 102.5px;
 }
 
-.object-sec {
-  margin-top: 48px;
+.object-sec__banner {
+  height: 900px;
 }
-.object-sec .btn {
-  padding-top: 14px;
-  padding-bottom: 14px;
+@media (max-width: 992px) {
+  .object-sec__banner {
+    height: 600px;
+  }
+}
+@media (max-width: 768px) {
+  .object-sec__banner {
+    height: 367px;
+  }
 }
 .object-sec .list .line {
   border-bottom: 1px dotted #dee2e6;
