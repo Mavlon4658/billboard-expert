@@ -88,6 +88,8 @@ body {
 @media (max-width: 768px) {
   .main-container {
     max-width: calc(100% - 24px);
+    padding: 0 !important;
+    margin: 0 auto !important;
   }
 }
 
@@ -365,6 +367,7 @@ body {
 @media (max-width: 768px) {
   .search-intro p {
     margin: 45px 0;
+    width: 100%;
   }
 }
 .search-intro .input-group button {
@@ -414,6 +417,12 @@ body {
   background: #0088cc;
 }
 
+#scrollBtns {
+  z-index: 9999;
+  display: none;
+  bottom: 2px;
+}
+
 footer {
   margin-top: 48px;
   padding: 64px 36px 58px 36px;
@@ -425,8 +434,20 @@ footer p {
 }
 @media (max-width: 768px) {
   footer {
-    padding: 0;
+    padding: 24px 24px 40px 24px;
     margin-bottom: 2px;
     margin-top: 180px;
   }
+}
+
+.empty-box {
+  width: 270px;
+  margin: 108px auto 108px auto;
+}
+.empty-box img {
+  margin: 0 auto;
+}
+.empty-box p {
+  color: #ADB5BD;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
