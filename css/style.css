@@ -273,4 +273,46 @@ body {
 
 .gap-y-24 {
   row-gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .search-intro .main-container {
+    padding: 0;
+  }
+}
+.search-intro .content {
+  max-width: 686px;
+  width: 100%;
+  margin: 0 auto;
+}
+.search-intro p {
+  color: #dee2e6;
+  width: 417px;
+  margin: 30px auto;
+}
+@media (max-width: 768px) {
+  .search-intro p {
+    margin: 45px 0;
+  }
+}
+.search-intro .input-group button {
+  width: 101px;
+  padding: 0;
+}
+
+.saved-maps__card .card-body {
+  padding: 47px 37px;
+}
+@media (max-width: 1700px) {
+  .saved-maps__card .card-body {
+    padding: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .saved-maps .card-title {
+    font-size: 21px !important;
+  }
+}
+.saved-maps .row {
+  row-gap: 24px;
 }/*# sourceMappingURL=style.css.map */

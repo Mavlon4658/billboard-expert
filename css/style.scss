@@ -328,3 +328,51 @@ body {
 .gap-y-24 {
   row-gap: 24px;
 }
+// search-intro
+.search-intro {
+  .main-container {
+    @media (max-width: 768px) {
+      padding: 0;
+    }
+  }
+  .content {
+    max-width: 686px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  p {
+    color: #dee2e6;
+    width: 417px;
+    margin: 30px auto;
+    @media (max-width: 768px) {
+      margin: 45px 0;
+    }
+  }
+  .input-group {
+    button {
+      width: 101px;
+      padding: 0;
+    }
+  }
+}
+
+// saved-maps
+.saved-maps {
+  &__card {
+    .card-body {
+      padding: 47px 37px;
+      @media (max-width: 1700px) {
+        padding: 30px;
+      }
+    }
+  }
+  .card-title {
+    @media (max-width: 768px) {
+      font-size: 21px !important;
+    }
+  }
+  .row {
+    row-gap: 24px;
+  }
+}
+// saved-maps
