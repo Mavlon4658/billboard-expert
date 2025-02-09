@@ -158,7 +158,8 @@ body {
     height: 367px;
   }
 }
-.object-sec .list .line {
+
+.charaker-list .line {
   border-bottom: 1px dotted #dee2e6;
   transform: translateY(-4px);
 }
@@ -184,4 +185,31 @@ body {
   .map-tabs iframe {
     height: 367px;
   }
+}
+
+.offcanvas-modal {
+  padding: 28px 38px;
+  width: 452px !important;
+}
+@media (max-width: 700px) {
+  .offcanvas-modal {
+    width: 100% !important;
+    margin: 0;
+    padding: 30px 12px;
+    border: none !important;
+  }
+}
+.offcanvas-modal .modal-close {
+  min-width: 16px;
+  min-height: 16px;
+}
+
+.text-bg-outline-primary {
+  border: 1px solid #005bff;
+  color: #005bff;
+  background: transparent;
+}
+
+.gap-y-24 {
+  row-gap: 24px;
 }/*# sourceMappingURL=style.css.map */
