@@ -80,6 +80,9 @@ body {
   &-6 {
     font-size: 14px !important;
   }
+  &-7 {
+    font-size: 19px !important;
+  }
 }
 .btn {
   padding: 11.5px 28px;
@@ -376,3 +379,15 @@ body {
   }
 }
 // saved-maps
+
+// search-object
+.search-object {
+  .content {
+    span {
+      color: #adb5bd;
+      font-style: italic;
+      margin-top: 15px;
+    }
+  }
+}
+// search-object
