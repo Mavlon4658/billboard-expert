@@ -560,4 +560,8 @@ footer p {
   .lmodal-2 .form-inp {
     margin: 48px 0 24px;
   }
+}
+
+.table-responsive .tablet-head th {
+  white-space: nowrap !important;
 }/*# sourceMappingURL=style.css.map */
