@@ -39,3 +39,23 @@ window.addEventListener('resize', () => {
         }, false)
     })
 })()
+
+const toastTriggers = document.querySelectorAll('.liveToastBtnOpen')
+const toastTriggerError = document.querySelectorAll('.liveToastErrorBtnOpen')
+const toastLiveExample = document.getElementById('liveToast')
+const toastLiveError = document.getElementById('liveToastError')
+
+if (toastTriggers.length) {
+    const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+    const toastBootstrap2 = bootstrap.Toast.getOrCreateInstance(toastLiveError)
+    toastTriggers.forEach(toastTrigger => {
+        toastTrigger.addEventListener('click', () => {
+            toastBootstrap.show()
+        })
+    })
+    toastTriggerError.forEach(toastTrigger => {
+        toastTrigger.addEventListener('click', () => {
+            toastBootstrap2.show()
+        })
+    })
+}
