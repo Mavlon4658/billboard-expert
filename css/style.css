@@ -562,10 +562,6 @@ footer p {
   }
 }
 
-.table-responsive .tablet-head th {
-  white-space: nowrap !important;
-}
-
 .create-card {
   margin-bottom: 137px;
 }
@@ -581,4 +577,32 @@ footer p {
   .create-card h2 {
     margin-bottom: 77px;
   }
+}
+
+.old-base .input-group input {
+  width: 252px;
+}
+.old-base .btn-success {
+  width: 292px;
+}
+.old-base .table-responsive {
+  overflow: auto !important;
+  height: 615px;
+  border-bottom: 1px solid #222222;
+  border-top: 1px solid #DEE2E6;
+}
+.old-base table {
+  min-width: 1620px;
+}
+.old-base table thead {
+  position: sticky;
+  top: 0;
+}
+.old-base table tbody tr {
+  vertical-align: middle;
+}
+.old-base table tbody td {
+  min-height: 66px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }/*# sourceMappingURL=style.css.map */

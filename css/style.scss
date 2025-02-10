@@ -701,18 +701,6 @@ footer {
 }
 // Landlord modal end
 
-// tablet
-.table-responsive {
-    .tablet-head {
-        th {
-            white-space: nowrap !important;
-        }
-    }
-
-    
-}
-// tablet
-
 // Create card 
 .create-card {
     margin-bottom: 137px;
@@ -730,3 +718,42 @@ footer {
     }
 }
 // Create card end
+
+// Old base
+.old-base {
+    .input-group input {
+        width: 252px;
+    }
+
+    .btn-success {
+        width: 292px;
+    }
+
+    .table-responsive {
+        overflow: auto !important;
+        height: 615px;
+        border-bottom: 1px solid #222222;
+        border-top: 1px solid #DEE2E6;
+    }
+
+    table {
+        min-width: 1620px;
+        
+        thead {
+            position: sticky;
+            top: 0;
+        }
+
+        tbody {
+            tr {
+                vertical-align: middle;
+            }
+            td {
+                min-height: 66px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+// Old base end
