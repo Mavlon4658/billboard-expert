@@ -114,6 +114,11 @@ body {
 }
 
 /* Header end */
+.mobile-menu .input-group-text {
+  width: 42px;
+  height: 35px;
+}
+
 @media (max-width: 768px) {
   .home iframe {
     height: 404px;
@@ -188,17 +193,14 @@ body {
   }
 }
 
-.filter-modal .modal-dialog {
-  width: 390px;
+.filter-modal .collapse-btn {
+  padding: 6px 12px;
 }
-@media (max-width: 576px) {
-  .filter-modal .modal-dialog {
-    width: 100%;
-    margin-left: 0;
-  }
+.filter-modal .collapse-btn img {
+  transition: transform 0.3s ease-in-out;
 }
-.filter-modal .modal-content {
-  padding: 28px 0;
+.filter-modal .collapse-btn[aria-expanded=true] img {
+  transform: rotateZ(180deg);
 }
 
 .program .main-container {

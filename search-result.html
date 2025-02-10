@@ -61,7 +61,8 @@
               </li>
             </ul>
             <a href="#" class="btn btn-primary fs-6 d-none d-xl-flex">Быстрый заказ</a>
-            <button>
+            <button class="d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobMenuModal"
+              aria-controls="mobMenuModal">
               <img src="./img/bars.svg" alt="">
             </button>
           </div>
@@ -69,6 +70,48 @@
       </div>
     </header>
     <!-- Header end -->
+
+    <!-- Mobile menu -->
+    <div class="offcanvas offcanvas-end mobile-menu" tabindex="-1" id="mobMenuModal"
+      aria-labelledby="mobMenuModalLabel">
+      <div class="offcanvas-header d-flex align-items-center justify-content-between">
+        <h5 class="offcanvas-title fs-5 fw-bold" id="mobMenuModalLabel">Меню</h5>
+        <button type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+          <img src="./img/times-blue.svg" alt="">
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="d-flex flex-column align-items-center gap-4 fs-5">
+          <li>
+            <a href="#">О нас</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+          <li>
+            <a href="#">Поиск</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center gap-4 my-5">
+          <a href="#" class="btn btn-primary w-50 py-2 px-0 fs-6">Быстрый заказ</a>
+          <div class="input-group w-50">
+            <input type="text" class="form-control" placeholder="Поиск" aria-label="Input group example"
+              aria-describedby="btnGroupAddon">
+            <div class="input-group-text btn btn-primary p-0 d-flex align-items-center justify-content-center"
+              id="btnGroupAddon">
+              <img src="./img/search-icon.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+          <a href="#">
+            <img src="./img/mail-icon.svg" alt="">
+            <span>bill@p2m.su</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile menu end -->
 
     <main>
 
@@ -100,8 +143,8 @@
           <div class="mt-4 pt-md-2 mx-md-2 px-md-1">
             <div class="d-flex align-items-center justify-content-between objects-head mb-0">
               <div class="d-flex align-items-center gap-4 objects-head__left">
-                <button type="button" class="btn btn-primary fs-6 px-0 filter-btn" data-bs-toggle="modal"
-                  data-bs-target="#exampleModal">
+                <button class="btn btn-primary fs-6 px-0 filter-btn" type="button" data-bs-toggle="offcanvas"
+                  data-bs-target="#filterModal" aria-controls="filterModal">
                   <span>Фильтры</span>
                   <img src="./img/filter-icon.svg" alt="">
                 </button>
@@ -264,29 +307,233 @@
       <!-- Objects end -->
 
       <!-- Filter modal -->
-      <div class="modal filter-modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog h-100 my-0 me-sm-0">
-          <div class="modal-content border-0 rounded-0 h-100 d-flex flex-column justify-content-between">
+      <div class="filter-modal offcanvas offcanvas-end" tabindex="-1" id="filterModal"
+        aria-labelledby="filterModalLabel" aria-modal="true">
+        <div class="offcanvas-header px-4 py-4 mt-1 d-flex align-items-center justify-content-between">
+          <h5 class="fs-5 fw-bold">Фильтры</h5>
+          <button type="button" class="d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas"
+            aria-label="Close">
+            <img src="./img/times.svg" alt="">
+          </button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-between gap-4">
+          <div class="d-flex flex-column gap-4">
             <div>
-              <div class="d-flex px-4 align-items-center justify-content-between">
-                <h1 class="fw-bold fs-5">Фильтры</h1>
-                <button type="button" class="d-flex align-items-center justify-content-center data-bs-dismiss=" modal"
-                  aria-label="Close">
-                  <img src="./img/times.svg" alt="">
-                </button>
-              </div>
-              <div>
-
+              <button class="collapse-btn d-flex align-items-center gap-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#filterCollapse1" aria-expanded="false" aria-controls="filterCollapse1">
+                <span>Сторона</span>
+                <img src="./img/triangle.svg" alt="">
+              </button>
+              <div class="collapse" id="filterCollapse1">
+                <div class="pt-4 d-flex flex-column gap-4">
+                  <div class="py-1 px-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="filterCheckbox11" checked>
+                      <label class="form-check-label fs-6" for="filterCheckbox11">
+                        A1
+                      </label>
+                    </div>
+                  </div>
+                  <div class="py-1 px-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="filterCheckbox12">
+                      <label class="form-check-label fs-6" for="filterCheckbox12">
+                        A2
+                      </label>
+                    </div>
+                  </div>
+                  <div class="py-1 px-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="filterCheckbox13">
+                      <label class="form-check-label fs-6" for="filterCheckbox13">
+                        A3
+                      </label>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="px-1">
-              <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">Закрыть</button>
+            <div>
+              <button class="collapse-btn d-flex align-items-center gap-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#filterCollapse2" aria-expanded="false" aria-controls="filterCollapse2">
+                <span>Тип конструкции</span>
+                <img src="./img/triangle.svg" alt="">
+              </button>
+              <div class="collapse" id="filterCollapse2">
+                <div class="pt-4 d-flex flex-column gap-4">
+                  <div class="py-1 px-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="filterCheckbox21" checked>
+                      <label class="form-check-label fs-6" for="filterCheckbox21">
+                        A1
+                      </label>
+                    </div>
+                  </div>
+                  <div class="py-1 px-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="filterCheckbox22">
+                      <label class="form-check-label fs-6" for="filterCheckbox22">
+                        A2
+                      </label>
+                    </div>
+                  </div>
+                  <div class="py-1 px-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="filterCheckbox23">
+                      <label class="form-check-label fs-6" for="filterCheckbox23">
+                        A3
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <button class="collapse-btn d-flex align-items-center gap-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#filterCollapse3" aria-expanded="false" aria-controls="filterCollapse3">
+                <span>Способ показа</span>
+                <img src="./img/triangle.svg" alt="">
+              </button>
+              <div class="collapse" id="filterCollapse3">
+                <div class="pt-4 d-flex flex-column gap-4">
+                  <div class="py-1 px-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="filterCheckbox31" checked>
+                      <label class="form-check-label fs-6" for="filterCheckbox31">
+                        A1
+                      </label>
+                    </div>
+                  </div>
+                  <div class="py-1 px-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="filterCheckbox32">
+                      <label class="form-check-label fs-6" for="filterCheckbox32">
+                        A2
+                      </label>
+                    </div>
+                  </div>
+                  <div class="py-1 px-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="filterCheckbox33">
+                      <label class="form-check-label fs-6" for="filterCheckbox33">
+                        A3
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <button class="collapse-btn d-flex align-items-center gap-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#filterCollapse4" aria-expanded="false" aria-controls="filterCollapse4">
+                <span>Свет</span>
+                <img src="./img/triangle.svg" alt="">
+              </button>
+              <div class="collapse" id="filterCollapse4">
+                <div class="pt-4 d-flex flex-column gap-4">
+                  <div class="py-1 px-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="filterCheckbox41" checked>
+                      <label class="form-check-label fs-6" for="filterCheckbox41">
+                        A1
+                      </label>
+                    </div>
+                  </div>
+                  <div class="py-1 px-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="filterCheckbox42">
+                      <label class="form-check-label fs-6" for="filterCheckbox42">
+                        A2
+                      </label>
+                    </div>
+                  </div>
+                  <div class="py-1 px-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="filterCheckbox43">
+                      <label class="form-check-label fs-6" for="filterCheckbox43">
+                        A3
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <button class="collapse-btn d-flex align-items-center gap-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#filterCollapse5" aria-expanded="false" aria-controls="filterCollapse5">
+                <span>GRP</span>
+                <img src="./img/triangle.svg" alt="">
+              </button>
+              <div class="collapse" id="filterCollapse5">
+                <div class="pt-4 d-flex flex-column gap-4">
+                  <div class="py-1 px-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="filterCheckbox51" checked>
+                      <label class="form-check-label fs-6" for="filterCheckbox51">
+                        A1
+                      </label>
+                    </div>
+                  </div>
+                  <div class="py-1 px-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="filterCheckbox52">
+                      <label class="form-check-label fs-6" for="filterCheckbox52">
+                        A2
+                      </label>
+                    </div>
+                  </div>
+                  <div class="py-1 px-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="filterCheckbox53">
+                      <label class="form-check-label fs-6" for="filterCheckbox53">
+                        A3
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <button class="collapse-btn d-flex align-items-center gap-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#filterCollapse6" aria-expanded="false" aria-controls="filterCollapse6">
+                <span>OTS</span>
+                <img src="./img/triangle.svg" alt="">
+              </button>
+              <div class="collapse" id="filterCollapse6">
+                <div class="pt-4 d-flex flex-column gap-4">
+                  <div class="py-1 px-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="filterCheckbox61" checked>
+                      <label class="form-check-label fs-6" for="filterCheckbox61">
+                        A1
+                      </label>
+                    </div>
+                  </div>
+                  <div class="py-1 px-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="filterCheckbox62">
+                      <label class="form-check-label fs-6" for="filterCheckbox62">
+                        A2
+                      </label>
+                    </div>
+                  </div>
+                  <div class="py-1 px-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="filterCheckbox63">
+                      <label class="form-check-label fs-6" for="filterCheckbox63">
+                        A3
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+          <button type="button" class="btn btn-outline-primary">Primary</button>
         </div>
       </div>
       <!-- Filter modal -->
+
       <!-- Objects -->
       <section class="objects pb-5">
         <div class="main-container">

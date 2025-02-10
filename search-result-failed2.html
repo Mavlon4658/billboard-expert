@@ -62,7 +62,8 @@
                 </li>
               </ul>
               <a href="#" class="btn btn-primary fs-6 d-none d-xl-flex">Быстрый заказ</a>
-              <button>
+              <button class="d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobMenuModal"
+                aria-controls="mobMenuModal">
                 <img src="./img/bars.svg" alt="">
               </button>
             </div>
@@ -71,11 +72,54 @@
       </header>
       <!-- Header end -->
 
+      <!-- Mobile menu -->
+      <div class="offcanvas offcanvas-end mobile-menu" tabindex="-1" id="mobMenuModal"
+        aria-labelledby="mobMenuModalLabel">
+        <div class="offcanvas-header d-flex align-items-center justify-content-between">
+          <h5 class="offcanvas-title fs-5 fw-bold" id="mobMenuModalLabel">Меню</h5>
+          <button type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+            <img src="./img/times-blue.svg" alt="">
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="d-flex flex-column align-items-center gap-4 fs-5">
+            <li>
+              <a href="#">О нас</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+            <li>
+              <a href="#">Поиск</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center gap-4 my-5">
+            <a href="#" class="btn btn-primary w-50 py-2 px-0 fs-6">Быстрый заказ</a>
+            <div class="input-group w-50">
+              <input type="text" class="form-control" placeholder="Поиск" aria-label="Input group example"
+                aria-describedby="btnGroupAddon">
+              <div class="input-group-text btn btn-primary p-0 d-flex align-items-center justify-content-center"
+                id="btnGroupAddon">
+                <img src="./img/search-icon.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+            <a href="#">
+              <img src="./img/mail-icon.svg" alt="">
+              <span>bill@p2m.su</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile menu end -->
+
       <main>
 
         <section class="program search-intro my-5">
           <div class="main-container">
-            <div class="overflow-hidden position-relative rounded-4 d-flex flex-column align-items-center text-center program-content">
+            <div
+              class="overflow-hidden position-relative rounded-4 d-flex flex-column align-items-center text-center program-content">
               <div class="content px-md-0 px-2 mx-md-0 mx-1">
                 <img src="./img/program-bg.png" alt="" class="position-absolute top-0 start-0 w-100 h-100 program-bg">
                 <h3 class="fs-2 fw-bold mb-5 mb-md-3">Поиск объектов</h3>
@@ -92,7 +136,7 @@
                 </div>
                 <p class="fs-6 text-center mt-3 pt-3 mb-4 pb-2">Можно искать по адресу или GID
                   — например набережная Шевченко Тараса или MS003034А</p>
-                  <a class="btn btn-success" href="#!">Открыть карту</a>
+                <a class="btn btn-success" href="#!">Открыть карту</a>
               </div>
 
             </div>
@@ -120,7 +164,7 @@
         <span>Telegram</span>
       </a>
     </div>
-    
+
     <footer>
       <p class="fs-6">
         2024 © P2M Group (ООО "Рокет Принт” ИНН 9723095579 ОГРН 1197746725175 <br> Юридический и фактический адрес:
