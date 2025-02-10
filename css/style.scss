@@ -700,3 +700,21 @@ footer {
     }
 }
 // Landlord modal end
+
+// Create card 
+.create-card {
+    margin-bottom: 137px;
+
+    @media (max-width: 768px) {
+        margin-bottom: 0;
+    }
+    
+    h2 {
+        margin-bottom: 95px;
+
+        @media (max-width: 768px) {
+            margin-bottom: 77px;
+        }
+    }
+}
+// Create card end
