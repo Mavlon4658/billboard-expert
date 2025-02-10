@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>billboard.expert</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Normalize CSS file -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <!-- CSS file -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <div class="wrapper font-inter fw-normal">
+
+    <!-- Header -->
+    <header class="header admin-header mb-5">
+      <div class="main-container position-relative px-md-2">
+        <div class="header-content position-relative d-flex align-items-center justify-content-end justify-content-md-between px-md-4">
+          <a href="/" class="header-logo">
+            <img src="./img/logo.svg" alt="">
+          </a>
+          <button class="d-flex align-items-center justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobMenuModal"
+            aria-controls="mobMenuModal">
+            <img src="./img/bars.svg" alt="">
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Mobile menu -->
+    <div class="offcanvas offcanvas-end mobile-menu admin-menu" tabindex="-1" id="mobMenuModal"
+      aria-labelledby="mobMenuModalLabel">
+      <div class="offcanvas-header d-flex align-items-center justify-content-between">
+        <h5 class="offcanvas-title fs-5 fw-bold" id="mobMenuModalLabel"></h5>
+        <button class="d-flex align-items-center align-items-center" type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+          <img src="./img/times.svg" alt="">
+        </button>
+      </div>
+      <div class="offcanvas-body px-4 d-flex flex-column gap-4 justify-content-between">
+        <ul class="d-flex flex-column align-items-start gap-4 fs-5">
+          <li class="w-100">
+            <a href="#" class="d-flex align-items-center gap-3 w-100">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 19V11.4208C13 11.1696 12.8946 10.9286 12.7071 10.7509C12.5196 10.5733 12.2652 10.4735 12 10.4735H8C7.73478 10.4735 7.48043 10.5733 7.29289 10.7509C7.10536 10.9286 7 11.1696 7 11.4208V19M1 8.57866C0.99993 8.30303 1.06333 8.03071 1.18579 7.78069C1.30824 7.53066 1.4868 7.30896 1.709 7.13104L8.709 1.44762C9.06999 1.15858 9.52736 1 10 1C10.4726 1 10.93 1.15858 11.291 1.44762L18.291 7.13104C18.5132 7.30896 18.6918 7.53066 18.8142 7.78069C18.9367 8.03071 19.0001 8.30303 19 8.57866V17.1052C19 17.6077 18.7893 18.0897 18.4142 18.445C18.0391 18.8004 17.5304 19 17 19H3C2.46957 19 1.96086 18.8004 1.58579 18.445C1.21071 18.0897 1 17.6077 1 17.1052V8.57866Z" stroke="#222222" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="pl-1">Главная</span>
+            </a>
+          </li>
+          <li class="w-100">
+            <a href="#" class="d-flex align-items-center gap-3 w-100">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 3.59581C12.6897 3.59581 12.3836 3.52165 12.106 3.37921L7.894 1.2166C7.6164 1.07416 7.31033 1 7 1M13 3.59581C13.3103 3.59581 13.6164 3.52165 13.894 3.37921L17.553 1.50002C17.7056 1.42173 17.8751 1.38481 18.0455 1.39278C18.2159 1.40075 18.3814 1.45334 18.5265 1.54554C18.6715 1.63775 18.7911 1.76651 18.874 1.91958C18.9569 2.07266 19.0002 2.24496 19 2.4201V15.5272C18.9999 15.7178 18.9481 15.9047 18.8504 16.0668C18.7528 16.229 18.6131 16.36 18.447 16.4452L13.894 18.7834C13.6164 18.9258 13.3103 19 13 19M13 3.59581V19M13 19C12.6897 19 12.3836 18.9258 12.106 18.7834L7.894 16.6208C7.6164 16.4783 7.31033 16.4042 7 16.4042C6.68967 16.4042 6.3836 16.4783 6.106 16.6208L2.447 18.5C2.29435 18.5783 2.12473 18.6152 1.95426 18.6072C1.78379 18.5992 1.61816 18.5465 1.47312 18.4542C1.32808 18.3619 1.20846 18.233 1.12565 18.0797C1.04284 17.9265 0.999582 17.7541 1 17.5789V4.47283C1.0001 4.28218 1.05189 4.09532 1.14956 3.93318C1.24722 3.77104 1.38692 3.64002 1.553 3.5548L6.106 1.2166C6.3836 1.07416 6.68967 1 7 1M7 1V16.4031" stroke="#222222" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="pl-1">Общая карта</span>
+            </a>
+          </li>
+          <li class="w-100">
+            <a href="#" class="d-flex align-items-center gap-3 w-100">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 19V12C15 11.7348 14.8946 11.4804 14.7071 11.2929C14.5196 11.1054 14.2652 11 14 11H6C5.73478 11 5.48043 11.1054 5.29289 11.2929C5.10536 11.4804 5 11.7348 5 12V19M5 1V5C5 5.26522 5.10536 5.51957 5.29289 5.70711C5.48043 5.89464 5.73478 6 6 6H13M13.2 1C13.7275 1.00751 14.2307 1.22317 14.6 1.6L18.4 5.4C18.7768 5.76926 18.9925 6.27246 19 6.8V17C19 17.5304 18.7893 18.0391 18.4142 18.4142C18.0391 18.7893 17.5304 19 17 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H13.2Z" stroke="#222222" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="pl-1">Сохраненные программы</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="d-flex align-items-center gap-3 active">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 13L19 17C19 17.5304 18.7893 18.0391 18.4142 18.4142C18.0391 18.7893 17.5304 19 17 19L3 19C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17L1 13M5.5 8L10.5 13M10.5 13L15.5 8M10.5 13L10.5 1" stroke="#222222" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="pl-1">Выгрузки собственников</span>
+            </a>
+          </li>
+          <li class="w-100">
+            <a href="#" class="d-flex align-items-center gap-3 w-100">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.0826 5.07607C11.909 5.25311 11.8118 5.49114 11.8118 5.73906C11.8118 5.98697 11.909 6.225 12.0826 6.40204L13.598 7.91743C13.775 8.09097 14.013 8.18818 14.2609 8.18818C14.5089 8.18818 14.7469 8.09097 14.9239 7.91743L18.4946 4.34679C18.9708 5.39922 19.115 6.5718 18.908 7.70826C18.7009 8.84472 18.1524 9.89109 17.3356 10.7079C16.5187 11.5247 15.4724 12.0732 14.3359 12.2803C13.1994 12.4874 12.0269 12.3432 10.9744 11.8669L4.42983 18.4115C4.05304 18.7883 3.54201 19 3.00915 19C2.47629 19 1.96525 18.7883 1.58847 18.4115C1.21168 18.0347 1 17.5237 1 16.9909C1 16.458 1.21168 15.947 1.58847 15.5702L8.13307 9.02557C7.65683 7.97314 7.51263 6.80056 7.71969 5.66409C7.92676 4.52763 8.47526 3.48127 9.29208 2.66444C10.1089 1.84761 11.1553 1.29911 12.2917 1.09205C13.4282 0.884979 14.6008 1.02918 15.6532 1.50542L12.0826 5.07607Z" stroke="#222222" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="pl-1">Старая база</span>
+            </a>
+          </li>
+          <li class="w-100">
+            <a href="#" class="d-flex align-items-center gap-3 w-100">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.6 19V17C13.6 15.9391 13.2207 14.9217 12.5456 14.1716C11.8705 13.4214 10.9548 13 10 13H4.6C3.64522 13 2.72955 13.4214 2.05442 14.1716C1.37928 14.9217 1 15.9391 1 17V19M19 19V17C18.9994 16.1137 18.7339 15.2528 18.2452 14.5523C17.7565 13.8519 17.0723 13.3516 16.3 13.13M13.6 1.13C14.3744 1.3503 15.0607 1.8507 15.5509 2.55231C16.041 3.25392 16.3071 4.11683 16.3071 5.005C16.3071 5.89317 16.041 6.75608 15.5509 7.45769C15.0607 8.1593 14.3744 8.6597 13.6 8.88M10.9 5C10.9 7.20914 9.28822 9 7.3 9C5.31177 9 3.7 7.20914 3.7 5C3.7 2.79086 5.31177 1 7.3 1C9.28822 1 10.9 2.79086 10.9 5Z" stroke="#222222" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="pl-1">Клиентские карты</span>
+            </a>
+          </li>
+          <li class="w-100">
+            <a href="#" class="d-flex align-items-center gap-3 w-100">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 10C19 14.9706 14.9706 19 10 19M19 10C19 5.02944 14.9706 1 10 1M19 10H1M10 19C5.02944 19 1 14.9706 1 10M10 19C7.68901 16.5735 6.4 13.3509 6.4 10C6.4 6.64907 7.68901 3.42654 10 1M10 19C12.311 16.5735 13.6 13.3509 13.6 10C13.6 6.64907 12.311 3.42654 10 1M1 10C1 5.02944 5.02944 1 10 1" stroke="#222222" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="pl-1">Геокодер</span>
+            </a>
+          </li>
+          <li class="w-100">
+            <a href="#" class="d-flex align-items-center gap-3 w-100">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 1L17 1C17.5304 1 18.0391 1.21071 18.4142 1.58579C18.7893 1.96086 19 2.46957 19 3L19 17C19 17.5304 18.7893 18.0391 18.4142 18.4142C18.0391 18.7893 17.5304 19 17 19H13M8 14.5L13 9.5M13 9.5L8 4.5M13 9.5L1 9.5" stroke="#222222" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="pl-1">Выход</span>
+            </a>
+          </li>
+        </ul>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Поиск по адресу или GID" aria-label="Input group example" aria-describedby="btnGroupAddon">
+          <button type="button" class="input-group-text btn btn-primary fs-6 py-2 px-3">Поиск</button>
+        </div>      
+      </div>
+    </div>
+    <!-- Mobile menu end -->
+
+    <main>
+      
+      <!-- Landlord -->
+      <section class="landlord">
+        <div class="main-container">
+          <div class="px-md-2 mx-md-1">
+            <h2 class="fs-2 fw-bold px-2 mx-1 mb-3 d-none d-md-block">Выгрузки собственников</h2>
+            <div class="row row-gap-4 mb-5 mb-md-3 pb-1">
+              <div class="col-3 d-none d-lg-flex order-md-1">
+                <div class="d-flex h-100 flex-wrap align-items-center gap-2 ps-2 ms-1">
+                  <a href="#" class="d-flex align-items-center gap-1 fs-6 link-underline">
+                    <img src="./img/home-icon.svg" alt="">
+                    <span class="text-primary">Главная</span>
+                  </a>
+                  <span class="fs-6" style="color: #6C757D">/</span>
+                  <span class="fs-6" style="color: #6C757D">Набор данных</span>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 align-items-center order-2">
+                <div class="d-flex align-items-center justify-content-lg-end gap-3 gap-md-4 h-100">
+                  <a href="#" class="btn btn-sm btn-primary fs-6 d-flex align-items-center gap-1 text-nowrap flex-shrink-0">
+                    <span>10 объектов</span>
+                    <img src="./img/filter-icon.svg" alt="">
+                  </a>
+                  <div class="input-group ms-1 ms-md-2 w-100 w-md-auto">
+                    <input type="text" class="form-control" placeholder="Поиск" aria-label="Input group example" aria-describedby="searchBtn1">
+                    <button class="input-group-text bg-primary" id="searchBtn1">
+                      <img src="./img/search-icon.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3 order-1 order-md-3">
+                <div class="d-flex justify-content-end pb-1 pb-md-0">
+                  <a href="#" class="btn btn-success w-100 w-md-auto">Загркзка новой выгрузки</a>
+                </div>
+              </div>
+            </div>
+            <h3 class="fs-3 fw-bold mb-4 d-md-none">Набор данных</h3>
+            <div class="row row-gap-4">
+              <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                <div class="border p-4 rounded-4">
+                  <h3 class="fs-4 fw-bold mb-5">Щит 6х3 исключая Москва, Московская область, Санкт-Петербург 13.01.2025</h3>
+                  <div class="d-flex align-items-center justify-content-between mb-5">
+                    <div class="bg-primary rounded text-white p-2 fs-sm">
+                      <span class="px-1">№12</span>
+                    </div>
+                    <p class="fs-5">14-01-2025</p>
+                    <p class="fs-5">Объектов: 23441</p>
+                  </div>
+                  <div class="d-flex align-items-center gap-5 mb-4">
+                    <button type="button" class="btn btn-outline-danger w-100 fs-6" data-bs-toggle="modal" data-bs-target="#landlordModal1">Удалить</button>
+                    <button type="button" class="btn btn-outline-primary w-100 fs-6">Открыть</button>
+                  </div>
+                  <a href="#" class="btn btn-primary w-100">Скачать</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                <div class="border p-4 rounded-4">
+                  <h3 class="fs-4 fw-bold mb-5">Щит 6х3 исключая Москва, Московская область, Санкт-Петербург 13.01.2025</h3>
+                  <div class="d-flex align-items-center justify-content-between mb-5">
+                    <div class="bg-primary rounded text-white p-2 fs-sm">
+                      <span class="px-1">№12</span>
+                    </div>
+                    <p class="fs-5">14-01-2025</p>
+                    <p class="fs-5">Объектов: 23441</p>
+                  </div>
+                  <div class="d-flex align-items-center gap-5 mb-4">
+                    <button type="button" class="btn btn-outline-danger w-100 fs-6" data-bs-toggle="modal" data-bs-target="#landlordModal1">Удалить</button>
+                    <button type="button" class="btn btn-outline-primary w-100 fs-6">Открыть</button>
+                  </div>
+                  <a href="#" class="btn btn-primary w-100">Скачать</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                <div class="border p-4 rounded-4">
+                  <h3 class="fs-4 fw-bold mb-5">Щит 6х3 исключая Москва, Московская область, Санкт-Петербург 13.01.2025</h3>
+                  <div class="d-flex align-items-center justify-content-between mb-5">
+                    <div class="bg-primary rounded text-white p-2 fs-sm">
+                      <span class="px-1">№12</span>
+                    </div>
+                    <p class="fs-5">14-01-2025</p>
+                    <p class="fs-5">Объектов: 23441</p>
+                  </div>
+                  <div class="d-flex align-items-center gap-5 mb-4">
+                    <button type="button" class="btn btn-outline-danger w-100 fs-6" data-bs-toggle="modal" data-bs-target="#landlordModal1">Удалить</button>
+                    <button type="button" class="btn btn-outline-primary w-100 fs-6">Открыть</button>
+                  </div>
+                  <a href="#" class="btn btn-primary w-100">Скачать</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                <div class="border p-4 rounded-4">
+                  <h3 class="fs-4 fw-bold mb-5">Щит 6х3 исключая Москва, Московская область, Санкт-Петербург 13.01.2025</h3>
+                  <div class="d-flex align-items-center justify-content-between mb-5">
+                    <div class="bg-primary rounded text-white p-2 fs-sm">
+                      <span class="px-1">№12</span>
+                    </div>
+                    <p class="fs-5">14-01-2025</p>
+                    <p class="fs-5">Объектов: 23441</p>
+                  </div>
+                  <div class="d-flex align-items-center gap-5 mb-4">
+                    <button type="button" class="btn btn-outline-danger w-100 fs-6" data-bs-toggle="modal" data-bs-target="#landlordModal1">Удалить</button>
+                    <button type="button" class="btn btn-outline-primary w-100 fs-6">Открыть</button>
+                  </div>
+                  <a href="#" class="btn btn-primary w-100">Скачать</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                <div class="border p-4 rounded-4">
+                  <h3 class="fs-4 fw-bold mb-5">Щит 6х3 исключая Москва, Московская область, Санкт-Петербург 13.01.2025</h3>
+                  <div class="d-flex align-items-center justify-content-between mb-5">
+                    <div class="bg-primary rounded text-white p-2 fs-sm">
+                      <span class="px-1">№12</span>
+                    </div>
+                    <p class="fs-5">14-01-2025</p>
+                    <p class="fs-5">Объектов: 23441</p>
+                  </div>
+                  <div class="d-flex align-items-center gap-5 mb-4">
+                    <button type="button" class="btn btn-outline-danger w-100 fs-6" data-bs-toggle="modal" data-bs-target="#landlordModal1">Удалить</button>
+                    <button type="button" class="btn btn-outline-primary w-100 fs-6">Открыть</button>
+                  </div>
+                  <a href="#" class="btn btn-primary w-100">Скачать</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                <div class="border p-4 rounded-4">
+                  <h3 class="fs-4 fw-bold mb-5">Щит 6х3 исключая Москва, Московская область, Санкт-Петербург 13.01.2025</h3>
+                  <div class="d-flex align-items-center justify-content-between mb-5">
+                    <div class="bg-primary rounded text-white p-2 fs-sm">
+                      <span class="px-1">№12</span>
+                    </div>
+                    <p class="fs-5">14-01-2025</p>
+                    <p class="fs-5">Объектов: 23441</p>
+                  </div>
+                  <div class="d-flex align-items-center gap-5 mb-4">
+                    <button type="button" class="btn btn-outline-danger w-100 fs-6" data-bs-toggle="modal" data-bs-target="#landlordModal1">Удалить</button>
+                    <button type="button" class="btn btn-outline-primary w-100 fs-6">Открыть</button>
+                  </div>
+                  <a href="#" class="btn btn-primary w-100">Скачать</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                <div class="border p-4 rounded-4">
+                  <h3 class="fs-4 fw-bold mb-5">Щит 6х3 исключая Москва, Московская область, Санкт-Петербург 13.01.2025</h3>
+                  <div class="d-flex align-items-center justify-content-between mb-5">
+                    <div class="bg-primary rounded text-white p-2 fs-sm">
+                      <span class="px-1">№12</span>
+                    </div>
+                    <p class="fs-5">14-01-2025</p>
+                    <p class="fs-5">Объектов: 23441</p>
+                  </div>
+                  <div class="d-flex align-items-center gap-5 mb-4">
+                    <button type="button" class="btn btn-outline-danger w-100 fs-6" data-bs-toggle="modal" data-bs-target="#landlordModal1">Удалить</button>
+                    <button type="button" class="btn btn-outline-primary w-100 fs-6">Открыть</button>
+                  </div>
+                  <a href="#" class="btn btn-primary w-100">Скачать</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                <div class="border p-4 rounded-4">
+                  <h3 class="fs-4 fw-bold mb-5">Щит 6х3 исключая Москва, Московская область, Санкт-Петербург 13.01.2025</h3>
+                  <div class="d-flex align-items-center justify-content-between mb-5">
+                    <div class="bg-primary rounded text-white p-2 fs-sm">
+                      <span class="px-1">№12</span>
+                    </div>
+                    <p class="fs-5">14-01-2025</p>
+                    <p class="fs-5">Объектов: 23441</p>
+                  </div>
+                  <div class="d-flex align-items-center gap-5 mb-4">
+                    <button type="button" class="btn btn-outline-danger w-100 fs-6" data-bs-toggle="modal" data-bs-target="#landlordModal1">Удалить</button>
+                    <button type="button" class="btn btn-outline-primary w-100 fs-6">Открыть</button>
+                  </div>
+                  <a href="#" class="btn btn-primary w-100">Скачать</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                <div class="border p-4 rounded-4">
+                  <h3 class="fs-4 fw-bold mb-5">Щит 6х3 исключая Москва, Московская область, Санкт-Петербург 13.01.2025</h3>
+                  <div class="d-flex align-items-center justify-content-between mb-5">
+                    <div class="bg-primary rounded text-white p-2 fs-sm">
+                      <span class="px-1">№12</span>
+                    </div>
+                    <p class="fs-5">14-01-2025</p>
+                    <p class="fs-5">Объектов: 23441</p>
+                  </div>
+                  <div class="d-flex align-items-center gap-5 mb-4">
+                    <button type="button" class="btn btn-outline-danger w-100 fs-6" data-bs-toggle="modal" data-bs-target="#landlordModal1">Удалить</button>
+                    <button type="button" class="btn btn-outline-primary w-100 fs-6">Открыть</button>
+                  </div>
+                  <a href="#" class="btn btn-primary w-100">Скачать</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                <div class="border p-4 rounded-4">
+                  <h3 class="fs-4 fw-bold mb-5">Щит 6х3 исключая Москва, Московская область, Санкт-Петербург 13.01.2025</h3>
+                  <div class="d-flex align-items-center justify-content-between mb-5">
+                    <div class="bg-primary rounded text-white p-2 fs-sm">
+                      <span class="px-1">№12</span>
+                    </div>
+                    <p class="fs-5">14-01-2025</p>
+                    <p class="fs-5">Объектов: 23441</p>
+                  </div>
+                  <div class="d-flex align-items-center gap-5 mb-4">
+                    <button type="button" class="btn btn-outline-danger w-100 fs-6" data-bs-toggle="modal" data-bs-target="#landlordModal1">Удалить</button>
+                    <button type="button" class="btn btn-outline-primary w-100 fs-6">Открыть</button>
+                  </div>
+                  <a href="#" class="btn btn-primary w-100">Скачать</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                <div class="border p-4 rounded-4">
+                  <h3 class="fs-4 fw-bold mb-5">Щит 6х3 исключая Москва, Московская область, Санкт-Петербург 13.01.2025</h3>
+                  <div class="d-flex align-items-center justify-content-between mb-5">
+                    <div class="bg-primary rounded text-white p-2 fs-sm">
+                      <span class="px-1">№12</span>
+                    </div>
+                    <p class="fs-5">14-01-2025</p>
+                    <p class="fs-5">Объектов: 23441</p>
+                  </div>
+                  <div class="d-flex align-items-center gap-5 mb-4">
+                    <button type="button" class="btn btn-outline-danger w-100 fs-6" data-bs-toggle="modal" data-bs-target="#landlordModal1">Удалить</button>
+                    <button type="button" class="btn btn-outline-primary w-100 fs-6">Открыть</button>
+                  </div>
+                  <a href="#" class="btn btn-primary w-100">Скачать</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+                <div class="border p-4 rounded-4">
+                  <h3 class="fs-4 fw-bold mb-5">Щит 6х3 исключая Москва, Московская область, Санкт-Петербург 13.01.2025</h3>
+                  <div class="d-flex align-items-center justify-content-between mb-5">
+                    <div class="bg-primary rounded text-white p-2 fs-sm">
+                      <span class="px-1">№12</span>
+                    </div>
+                    <p class="fs-5">14-01-2025</p>
+                    <p class="fs-5">Объектов: 23441</p>
+                  </div>
+                  <div class="d-flex align-items-center gap-5 mb-4">
+                    <button type="button" class="btn btn-outline-danger w-100 fs-6" data-bs-toggle="modal" data-bs-target="#landlordModal1">Удалить</button>
+                    <button type="button" class="btn btn-outline-primary w-100 fs-6">Открыть</button>
+                  </div>
+                  <a href="#" class="btn btn-primary w-100">Скачать</a>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column align-items-center pt-5 gap-5">
+              <nav aria-label="Page navigation example">
+                  <ul class="pagination">
+                      <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                          </a>
+                      </li>
+                      <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Previous">
+                              <span aria-hidden="true">&lsaquo;</span>
+                          </a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">4</a></li>
+                      <li class="page-item"><a class="page-link" href="#">5</a></li>
+                      <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Next">
+                              <span aria-hidden="true">&rsaquo;</span>
+                          </a>
+                      </li>
+                      <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                          </a>
+                      </li>
+                  </ul>
+              </nav>
+              <p class="fs-6 text-center">Показаны с 1 по 4 из 195 записей</p>
+          </div>
+          </div>
+        </div>
+      </section>
+      <!-- Landlord end -->
+
+      <div class="modal landlord_modal lmodal-1 fade" id="landlordModal1" tabindex="-1" aria-labelledby="landlordModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered position-relative">
+          <div class="modal-content d-flex flex-column align-items-center justify-content-center justify-content-md-start rounded-0 position-relative">
+            <div class="d-flex align-items-center justify-content-between w-100">
+              <h2 class="fs-3 fw-bold"></h2>
+              <button type="button" class="d-flex align-items-center justify-content-center modal_close" data-bs-dismiss="modal" aria-label="Close">
+                <img src="./img/times.svg" alt="">
+              </button>
+            </div>
+            <div class="d-flex flex-column align-items-center text-center gap-4">
+              <img src="./img/warning-icon.svg" alt="">
+              <h3 class="pt-2 fs-3 fw-bold">Точно удалить?</h3>
+            </div>
+            <div class="d-flex btns align-items-center justify-content-between flex-column flex-md-row">
+              <a href="#" class="btn btn-outline-danger w-100">Удалить</a>
+              <a href="#" class="btn btn-outline-primary w-100" data-bs-dismiss="modal">Закрыть</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal landlord_modal lmodal-2 fade show" style="display: block;" id="landlordModal2" tabindex="-1" aria-labelledby="landlordModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered position-relative">
+          <div class="modal-content d-flex flex-column align-items-center justify-content-center justify-content-md-start rounded-0 position-relative">
+            <div class="d-flex align-items-center justify-content-between w-100">
+              <h2 class="fs-3 fw-bold">Загрузка новой выгрузки</h2>
+              <button type="button" class="d-flex align-items-center justify-content-center modal_close" data-bs-dismiss="modal" aria-label="Close">
+                <img src="./img/times.svg" alt="">
+              </button>
+            </div>
+            <div class="w-100 form-inp">
+              <label for="" class="fs-6 mb-2 pb-1">Название</label>
+              <input type="text" class="form-control" style="height: 38px;">
+            </div>
+            <div class="w-100 mb-5">
+              <label for="" class="fs-6 mb-2 pb-1">Файл выгрузки:</label>
+              <a href="#" class="btn btn-outline-primary w-100 my-4 py-2 fs-6">
+                <span class="py-1">Загрузить макет</span>
+              </a>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-end">
+                  <img src="./img/docs-icon.svg" alt="">
+                  <p class="fs-sm pb-1 ps-3 ms-1">13-01-2025_07-17-58.xlsx</p>
+                </div>
+                <a href="#" class="text-danger fs-sm">Удалить</a>
+              </div>
+            </div>
+            <a href="#" class="btn btn-success w-100 fs-6 w-100" style="max-width: 366px;">Загрузить выгрузки</a>
+          </div>
+        </div>
+      </div>
+      
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p class="fs-6">
+        2024 © P2M Group (ООО "Рокет Принт” ИНН 9723095579 ОГРН 1197746725175 <br> Юридический и фактический
+        адрес:
+        101000 г. Москва, Архангельский пер, д.6 стр.1 этаж/помещ.1/I, ком.10,11 <a href="#!">billboard.expert</a> | <a
+          href="#!">Политика в отношении персональных данных и оферта</a>
+      </p>
+    </footer>
+    <!-- Footer end -->
+
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- JS file -->
+  <script src="./js/main.js"></script>
+
+</body>
+
+</html>

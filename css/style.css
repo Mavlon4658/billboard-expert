@@ -75,6 +75,11 @@ body {
   font-size: 12px;
 }
 
+@media (min-width: 768px) {
+  .w-md-auto {
+    width: auto !important;
+  }
+}
 .btn {
   padding: 11.5px 28px;
 }
@@ -113,10 +118,54 @@ body {
   margin-left: 70px;
 }
 
+.admin-header .header-content {
+  padding-top: 19px;
+  padding-bottom: 19px;
+}
+@media (max-width: 768px) {
+  .admin-header .header-content {
+    z-index: 1;
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+  .admin-header .header-content .header-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 /* Header end */
 .mobile-menu .input-group-text {
   width: 42px;
   height: 35px;
+}
+
+.admin-menu {
+  width: 492px !important;
+}
+.admin-menu a.active, .admin-menu a:hover {
+  color: #005BFF;
+}
+.admin-menu a.active svg path, .admin-menu a:hover svg path {
+  stroke: #005BFF;
+}
+.admin-menu .input-group input::-moz-placeholder {
+  color: #DEE2E6;
+}
+.admin-menu .input-group input::placeholder {
+  color: #DEE2E6;
+}
+.admin-menu .input-group-text {
+  flex-shrink: 0;
+  width: auto;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .admin-menu {
+    width: 100% !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -455,4 +504,60 @@ footer p {
 .empty-box p {
   color: #ADB5BD;
   text-align: center;
+}
+
+@media (max-width: 678px) {
+  .search-intro .program-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.landlord .btn-sm {
+  padding: 6px 12px;
+}
+
+.landlord_modal .modal-dialog {
+  max-width: 672px;
+}
+@media (max-width: 768px) {
+  .landlord_modal .modal-dialog {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+.landlord_modal .modal-content {
+  padding: 32px 42px 37px;
+}
+@media (max-width: 768px) {
+  .landlord_modal .modal-content {
+    height: 100svh;
+    padding: 24px;
+    border: 0;
+  }
+  .landlord_modal .modal-content .modal_close {
+    position: absolute;
+    top: 18px;
+    right: 25px;
+  }
+}
+
+.lmodal-1 .btns {
+  max-width: 508px;
+  width: 100%;
+  gap: 60px;
+  margin: 60px auto 0;
+}
+@media (max-width: 768px) {
+  .lmodal-1 .btns {
+    gap: 40px;
+  }
+}
+.lmodal-2 .form-inp {
+  margin: 61px 0 38px;
+}
+@media (max-width: 768px) {
+  .lmodal-2 .form-inp {
+    margin: 48px 0 24px;
+  }
 }/*# sourceMappingURL=style.css.map */

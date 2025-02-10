@@ -90,6 +90,12 @@ body {
     }
 }
 
+@media (min-width: 768px) {
+    .w-md-auto {
+        width: auto !important;
+    }
+}
+
 .btn {
     padding: 11.5px 28px;
 
@@ -133,6 +139,26 @@ body {
     }
 }
 
+.admin-header {
+    .header-content {
+        padding-top: 19px;
+        padding-bottom: 19px;
+
+        @media (max-width: 768px) {
+            z-index: 1;
+            padding-top: 13px;
+            padding-bottom: 13px;
+
+            .header-logo {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
+
 /* Header end */
 
 // Moible menu
@@ -143,6 +169,38 @@ body {
     }
 }
 // Moible menu end
+
+// Admin menu
+.admin-menu {
+    width: 492px !important;
+
+    a {
+        &.active, &:hover {
+            color: #005BFF;
+
+            svg path {
+                stroke: #005BFF;
+            }
+        }
+    }
+
+    .input-group {
+        input::placeholder {
+            color: #DEE2E6;
+        }
+
+        &-text {
+            flex-shrink: 0;
+            width: auto;
+            height: auto;
+        }
+    }
+
+    @media (max-width: 768px) {
+        width: 100% !important;
+    }
+}
+// Admin menu end
 
 // Home
 .home {
@@ -573,3 +631,72 @@ footer {
         text-align: center;
     }
 }
+
+.search-intro .program-content {
+    @media (max-width: 678px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+// Landlord
+.landlord {
+    .btn-sm {
+        padding: 6px 12px;
+    }
+}
+// Landlord end
+
+// Landlord modal
+.landlord_modal {
+    .modal-dialog {
+        max-width: 672px;
+
+        @media (max-width: 768px) {
+            max-width: 100%;
+            margin: 0;
+        }
+    }
+
+    .modal-content {
+        padding: 32px 42px 37px;
+
+        @media (max-width: 768px) {
+            height: 100svh;
+            padding: 24px;
+            border: 0;
+
+            .modal_close {
+                position: absolute;
+                top: 18px;
+                right: 25px;
+            }
+        }
+    }
+}
+
+.lmodal {
+    &-1 {
+        .btns {
+            max-width: 508px;
+            width: 100%;
+            gap: 60px;
+            margin: 60px auto 0;
+
+            @media (max-width: 768px) {
+                gap: 40px;
+            }
+        }
+    }
+
+    &-2 {
+        .form-inp {
+            margin: 61px 0 38px;
+
+            @media (max-width: 768px) {
+                margin: 48px 0 24px;
+            }
+        }
+    }
+}
+// Landlord modal end
