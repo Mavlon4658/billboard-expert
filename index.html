@@ -21,50 +21,52 @@
 
         <!-- Header -->
         <header class="header">
-            <div class="main-container px-md-2">
-                <div class="header-content d-flex align-items-center justify-content-between py-2 px-md-4">
-                    <div class="d-flex align-items-center header-left">
-                        <a href="/" class="header-logo">
-                            <img src="./img/logo.svg" alt="">
-                        </a>
-                        <ul class="d-none d-xl-flex align-items-center gap-5 header-navs">
-                            <li>
-                                <a href="#" class="fs-6">О нас</a>
-                            </li>
-                            <li>
-                                <a href="#" class="fs-6">Контакты</a>
-                            </li>
-                            <li>
-                                <a href="#" class="fs-6">Поиск</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="header-right d-flex align-items-center gap-4 gap-md-5">
-                        <a href="mailto:bill@p2m.su" class="fs-6 d-none d-xl-flex align-items-center gap-1">
-                            <img src="./img/mail-icon.svg" alt="">
-                            <span>bill@p2m.su</span>
-                        </a>
-                        <a href="tel:+7 495 151 00 06" class="fs-6 d-flex align-items-center gap-1">
-                            <img src="./img/phone-icon.svg" alt="">
-                            <span>+7 495 151 00 06</span>
-                        </a>
-                        <ul class="d-none d-xl-flex align-items-center gap-4">
-                            <li>
-                                <a href="#" class="d-flex align-items-center justify-content-center">
-                                    <img src="./img/whatsapp.svg" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="d-flex align-items-center justify-content-center">
-                                    <img src="./img/telegram.svg" alt="">
-                                </a>
-                            </li>
-                        </ul>
-                        <a href="#" class="btn btn-primary fs-6 d-none d-xl-flex">Быстрый заказ</a>
-                        <button class="d-xl-none" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#mobMenuModal" aria-controls="mobMenuModal">
-                            <img src="./img/bars.svg" alt="">
-                        </button>
+            <div class="header-in position-fixed start-0 top-0 w-100 bg-white">
+                <div class="main-container px-md-2">
+                    <div class="header-content d-flex align-items-center justify-content-between py-2 px-md-4">
+                        <div class="d-flex align-items-center header-left">
+                            <a href="/" class="header-logo">
+                                <img src="./img/logo.svg" alt="">
+                            </a>
+                            <ul class="d-none d-xl-flex align-items-center gap-5 header-navs">
+                                <li>
+                                    <a href="#" class="fs-6">О нас</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fs-6">Контакты</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fs-6">Поиск</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-right d-flex align-items-center gap-4 gap-md-5">
+                            <a href="mailto:bill@p2m.su" class="fs-6 d-none d-xl-flex align-items-center gap-1">
+                                <img src="./img/mail-icon.svg" alt="">
+                                <span>bill@p2m.su</span>
+                            </a>
+                            <a href="tel:+7 495 151 00 06" class="fs-6 d-flex align-items-center gap-1">
+                                <img src="./img/phone-icon.svg" alt="">
+                                <span>+7 495 151 00 06</span>
+                            </a>
+                            <ul class="d-none d-xl-flex align-items-center gap-4">
+                                <li>
+                                    <a href="#" class="d-flex align-items-center justify-content-center">
+                                        <img src="./img/whatsapp.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex align-items-center justify-content-center">
+                                        <img src="./img/telegram.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-primary fs-6 d-none d-xl-flex">Быстрый заказ</a>
+                            <button class="d-xl-none" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#mobMenuModal" aria-controls="mobMenuModal">
+                                <img src="./img/bars.svg" alt="">
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -807,7 +809,7 @@
                             </div>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-outline-primary">Primary</button>
+                    <button type="button" class="btn btn-outline-primary">Закрыть</button>
                 </div>
             </div>
             <!-- Filter modal -->
@@ -1149,7 +1151,7 @@
             <section class="objects pb-5">
                 <div class="main-container">
                     <div class="mt-4 pt-md-2 mx-md-2 px-md-1">
-                        <h2 class="fs-2 fw-bold mb-4">Видимые объекты</h2>
+                        <h2 class="fs-2 fw-bold mb-4">Недавно просмотренные</h2>
                         <div class="row">
                             <div class="col-12 col-md-6 col-xxl-3">
                                 <div class="p-4 border rounded objects-card">
@@ -1457,11 +1459,11 @@
 
         <!-- Footer -->
         <div class="modal-btns w-100 position-fixed left-0" id="scrollBtns">
-            <a class="success-btn w-100" href="#!">
+            <a class="success-btn w-100 d-flex align-items-center justify-content-center" href="#">
                 <img src="img/white-whatsapp.svg" alt="">
                 <span>WhatsApp</span>
             </a>
-            <a class="primary-btn w-100" href="#!">
+            <a class="primary-btn w-100 d-flex align-items-center justify-content-center" href="#">
                 <img src="img/white-telegram.svg" alt="">
                 <span>Telegram</span>
             </a>

@@ -20,16 +20,18 @@
   <div class="wrapper font-inter fw-normal">
 
     <!-- Header -->
-    <header class="header admin-header mb-4 mb-md-5">
-      <div class="main-container position-relative px-md-2">
-        <div class="header-content position-relative d-flex align-items-center justify-content-end justify-content-md-between px-md-4">
-          <a href="/" class="header-logo">
-            <img src="./img/logo.svg" alt="">
-          </a>
-          <button class="d-flex align-items-center justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobMenuModal"
-            aria-controls="mobMenuModal">
-            <img src="./img/bars.svg" alt="">
-          </button>
+    <header class="header mb-4 mb-md-5">
+      <div class="header-in admin-header position-fixed start-0 top-0 w-100 bg-white">
+        <div class="main-container position-relative px-md-2">
+          <div class="header-content position-relative d-flex align-items-center justify-content-end justify-content-md-between px-md-4">
+            <a href="/" class="header-logo">
+              <img src="./img/logo.svg" alt="">
+            </a>
+            <button class="d-flex align-items-center justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobMenuModal"
+              aria-controls="mobMenuModal">
+              <img src="./img/bars.svg" alt="">
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -120,93 +122,95 @@
     <!-- Mobile menu end -->
 
     <section class="object-sec font-inter mt-md-5 mt-3">
-      <div class="main-container px-2 mx-1">
-        <div class="row">
-          <div class="col-xxl-6 col-lg-7 offset-xxl-1 mb-lg-0 mb-4">
-            <img class=" w-100 object-fit-cover rounded-3 object-sec__banner" src="img/object-img.png" alt=""
-              height="900px">
-          </div>
-          <div class="col-xxl-4 col-lg-5">
-            <div class="d-flex flex-column gap-4">
-              <h2 class="fs-2 fw-bold">Щит 6х3 Волгоградский пр-т 44Гс1, 100 м до X с ул. Люблинская</h2>
-              <div class="col-lg-6 d-flex flex-column gap-4">
-                <label for="" class="fs-4 text-lg-start text-center">Стоимость:</label>
-                <select class="form-select fs-6 py-2" aria-label="Default select example">
-                  <option value="" selected>Февраль: 10'000 Руб.</option>
-                  <option value="">Март: 10'000 Руб.</option>
-                  <option value="">Апрель: 10'000 Руб.</option>
-                  <option value="">Май: 10'000 Руб.</option>
-                  <option value="">Июнь: 10'000 Руб.</option>
-                  <option value="">Июль: 10'000 Руб.</option>
-                  <option value="">Август: 10'000 Руб.</option>
-                  <option value="">Сентябрь: 10'000 Руб.</option>
-                  <option value="">Октябрь: 10'000 Руб.</option>
-                  <option value="">Ноябрь: 10'000 Руб.</option>
-                  <option value="">Декабрь: 10'000 Руб.</option>
-                </select>
-                <a href="#" class="btn py-md-3 btn-success w-100 fs-6 w-50">В корзину</a>
-                <a href="#" class="btn py-md-3 btn-outline-primary w-100 fs-6 w-50">Быстрый заказ</a>
-              </div>
+      <div class="main-container px-2">
+        <div class="mx-1">
+          <div class="row">
+            <div class="col-xxl-6 col-lg-7 offset-xxl-1 mb-lg-0 mb-4">
+              <img class=" w-100 object-fit-cover rounded-3 object-sec__banner" src="img/object-img.png" alt=""
+                height="900px">
             </div>
-            <div class="col-lg-8">
-              <h4 class="mb-3 mt-4 fs-4">Характеристики:</h4>
-              <ul class="w-100 charaker-list">
-                <li class="d-flex justify-content-between fs-6 gap-1">
-                  <span class="fw-bold text-nowrap">Сторона</span>
-                  <div class="w-100 line"></div>
-                  <span class="text-nowrap">А</span>
-                </li>
-                <li class="d-flex justify-content-between fs-6 gap-1">
-                  <span class="fw-bold text-nowrap ">GID</span>
-                  <div class="w-100 line"></div>
-                  <span class="">MOBB13454A</span>
-                </li>
-                <li class="d-flex justify-content-between fs-6 gap-1">
-                  <span class="fw-bold text-nowrap">Направление</span>
-                  <div class="w-100 line"></div>
-                  <span class="text-nowrap">от РУШ</span>
-                </li>
-                <li class="d-flex justify-content-between fs-6 gap-1">
-                  <span class="fw-bold text-nowrap">Регион</span>
-                  <div class="w-100 line"></div>
-                  <span class="text-nowrap">Московская область</span>
-                </li>
-                <li class="d-flex justify-content-between fs-6 gap-1">
-                  <span class="fw-bold text-nowrap">Город/Район</span>
-                  <div class="w-100 line"></div>
-                  <span class="text-nowrap">Одинцовский</span>
-                </li>
-                <li class="d-flex justify-content-between fs-6 gap-1">
-                  <span class="fw-bold text-nowrap">Тип</span>
-                  <div class="w-100 line"></div>
-                  <span class="text-nowrap">Щит 6х3</span>
-                </li>
-                <li class="d-flex justify-content-between fs-6 gap-1">
-                  <span class="fw-bold text-nowrap">Способ показа</span>
-                  <div class="w-100 line"></div>
-                  <span class="text-nowrap">Статический</span>
-                </li>
-                <li class="d-flex justify-content-between fs-6 gap-1">
-                  <span class="fw-bold text-nowrap">Свет</span>
-                  <div class="w-100 line"></div>
-                  <span class="text-nowrap">Да</span>
-                </li>
-                <li class="d-flex justify-content-between fs-6 gap-1">
-                  <span class="fw-bold text-nowrap">GPR</span>
-                  <div class="w-100 line"></div>
-                  <span class="text-nowrap">2.4</span>
-                </li>
-                <li class="d-flex justify-content-between fs-6 gap-1">
-                  <span class="fw-bold text-nowrap">OTS</span>
-                  <div class="w-100 line"></div>
-                  <span class="text-nowrap">9.21</span>
-                </li>
-                <li class="d-flex justify-content-between fs-6 gap-1">
-                  <span class="fw-bold text-nowrap">Материал постера</span>
-                  <div class="w-100 line"></div>
-                  <span class="text-nowrap">Винил</span>
-                </li>
-              </ul>
+            <div class="col-xxl-4 col-lg-5">
+              <div class="d-flex flex-column gap-4">
+                <h2 class="fs-2 fw-bold">Щит 6х3 Волгоградский пр-т 44Гс1, 100 м до X с ул. Люблинская</h2>
+                <div class="col-lg-6 d-flex flex-column gap-4">
+                  <label for="" class="fs-4 text-lg-start text-center">Стоимость:</label>
+                  <select class="form-select fs-6 py-2" aria-label="Default select example">
+                    <option value="" selected>Февраль: 10'000 Руб.</option>
+                    <option value="">Март: 10'000 Руб.</option>
+                    <option value="">Апрель: 10'000 Руб.</option>
+                    <option value="">Май: 10'000 Руб.</option>
+                    <option value="">Июнь: 10'000 Руб.</option>
+                    <option value="">Июль: 10'000 Руб.</option>
+                    <option value="">Август: 10'000 Руб.</option>
+                    <option value="">Сентябрь: 10'000 Руб.</option>
+                    <option value="">Октябрь: 10'000 Руб.</option>
+                    <option value="">Ноябрь: 10'000 Руб.</option>
+                    <option value="">Декабрь: 10'000 Руб.</option>
+                  </select>
+                  <a href="#" class="btn py-md-3 btn-success w-100 fs-6 w-50">В КП</a>
+                  <a href="#" class="btn py-md-3 btn-outline-primary w-100 fs-6 w-50">Быстрый заказ</a>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <h4 class="mb-3 mt-4 fs-4">Характеристики:</h4>
+                <ul class="w-100 charaker-list">
+                  <li class="d-flex justify-content-between fs-6 gap-1">
+                    <span class="fw-bold text-nowrap">Сторона</span>
+                    <div class="w-100 line"></div>
+                    <span class="text-nowrap">А</span>
+                  </li>
+                  <li class="d-flex justify-content-between fs-6 gap-1">
+                    <span class="fw-bold text-nowrap ">GID</span>
+                    <div class="w-100 line"></div>
+                    <span class="">MOBB13454A</span>
+                  </li>
+                  <li class="d-flex justify-content-between fs-6 gap-1">
+                    <span class="fw-bold text-nowrap">Направление</span>
+                    <div class="w-100 line"></div>
+                    <span class="text-nowrap">от РУШ</span>
+                  </li>
+                  <li class="d-flex justify-content-between fs-6 gap-1">
+                    <span class="fw-bold text-nowrap">Регион</span>
+                    <div class="w-100 line"></div>
+                    <span class="text-nowrap">Московская область</span>
+                  </li>
+                  <li class="d-flex justify-content-between fs-6 gap-1">
+                    <span class="fw-bold text-nowrap">Город/Район</span>
+                    <div class="w-100 line"></div>
+                    <span class="text-nowrap">Одинцовский</span>
+                  </li>
+                  <li class="d-flex justify-content-between fs-6 gap-1">
+                    <span class="fw-bold text-nowrap">Тип</span>
+                    <div class="w-100 line"></div>
+                    <span class="text-nowrap">Щит 6х3</span>
+                  </li>
+                  <li class="d-flex justify-content-between fs-6 gap-1">
+                    <span class="fw-bold text-nowrap">Способ показа</span>
+                    <div class="w-100 line"></div>
+                    <span class="text-nowrap">Статический</span>
+                  </li>
+                  <li class="d-flex justify-content-between fs-6 gap-1">
+                    <span class="fw-bold text-nowrap">Свет</span>
+                    <div class="w-100 line"></div>
+                    <span class="text-nowrap">Да</span>
+                  </li>
+                  <li class="d-flex justify-content-between fs-6 gap-1">
+                    <span class="fw-bold text-nowrap">GPR</span>
+                    <div class="w-100 line"></div>
+                    <span class="text-nowrap">2.4</span>
+                  </li>
+                  <li class="d-flex justify-content-between fs-6 gap-1">
+                    <span class="fw-bold text-nowrap">OTS</span>
+                    <div class="w-100 line"></div>
+                    <span class="text-nowrap">9.21</span>
+                  </li>
+                  <li class="d-flex justify-content-between fs-6 gap-1">
+                    <span class="fw-bold text-nowrap">Материал постера</span>
+                    <div class="w-100 line"></div>
+                    <span class="text-nowrap">Винил</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -214,28 +218,30 @@
     </section>
 
     <section class="map-tabs mt-5">
-      <div class="main-container px-2 mx-1">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link fs-6 active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
-              type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Карта</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link fs-6" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
-              type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Панорама</button>
-          </li>
-        </ul>
-        <div class="tab-content mt-3" id="myTabContent">
-          <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
-            tabindex="0">
-            <iframe
-              src="https://yandex.ru/map-widget/v1/?um=constructor%3A34f05821ad3c9fadad345b8cabfdb5ff02ca47bc8ccbe852d64871d311ecad25&amp;source=constructor"
-              width="100%" height="925" frameborder="0"></iframe>
-          </div>
-          <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-            <iframe
-              src="https://yandex.ru/map-widget/v1/?um=constructor%3A34f05821ad3c9fadad345b8cabfdb5ff02ca47bc8ccbe852d64871d311ecad25&amp;source=constructor"
-              width="100%" height="925" frameborder="0"></iframe>
+      <div class="main-container px-2">
+        <div class="mx-1">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link fs-6 active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Карта</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link fs-6" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Панорама</button>
+            </li>
+          </ul>
+          <div class="tab-content mt-3" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+              tabindex="0">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A34f05821ad3c9fadad345b8cabfdb5ff02ca47bc8ccbe852d64871d311ecad25&amp;source=constructor"
+                width="100%" height="925" frameborder="0"></iframe>
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A34f05821ad3c9fadad345b8cabfdb5ff02ca47bc8ccbe852d64871d311ecad25&amp;source=constructor"
+                width="100%" height="925" frameborder="0"></iframe>
+            </div>
           </div>
         </div>
       </div>
