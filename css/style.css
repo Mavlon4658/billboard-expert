@@ -173,6 +173,8 @@ body {
   flex-shrink: 0;
   width: auto;
   height: auto;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 @media (max-width: 768px) {
   .admin-menu {
