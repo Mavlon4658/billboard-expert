@@ -797,3 +797,18 @@ footer {
     }
 }
 // Map add btns end
+
+// Geocoder
+.geocoder {
+    .row {
+        row-gap: 39px;
+    }
+
+    .collapse {
+        textarea {
+            border: 1px solid #DEE2E6 !important;
+            background: #E9ECEF;
+        }
+    }
+}
+// Geocoder end

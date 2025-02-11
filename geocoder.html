@@ -80,12 +80,35 @@
     <!-- Mobile menu end -->
 
     <main>
-      <section class="mt-5">
+      <section class="geocoder pb-5" style="min-height: 70svh;">
         <div class="main-container px-2">
           <h2 class="fs-2 mb-4 fw-bold">Геокодер</h2>
           <p class="fs-4">Введите адреса (каждый с новой строки):</p>
           <textarea class="form-control mb-5 mt-4" rows="8"></textarea>
-          <a class="btn btn-primary" href="#!">Геокодировать</a>
+          <div class="d-flex align-items-center gap-4 mb-5">
+            <button class="w-50 w-md-auto btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#geocodeCollapse" aria-expanded="false" aria-controls="geocodeCollapse">Геокодировать</button>
+            <a href="#" class="w-50 w-md-auto btn btn-outline-danger">Очистить</a>
+          </div>
+          <div class="collapse" id="geocodeCollapse">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-xl-3">
+                <label for="#" class="fs-5 mb-4">Исходные адреса:</label>
+                <textarea name="" id="" class="form-control" rows="8"></textarea>
+              </div>
+              <div class="col-12 col-sm-6 col-xl-3">
+                <label for="#" class="fs-5 mb-4">Широта:</label>
+                <textarea name="" id="" class="form-control" rows="8"></textarea>
+              </div>
+              <div class="col-12 col-sm-6 col-xl-3">
+                <label for="#" class="fs-5 mb-4">Долгота:</label>
+                <textarea name="" id="" class="form-control" rows="8"></textarea>
+              </div>
+              <div class="col-12 col-sm-6 col-xl-3">
+                <label for="#" class="fs-5 mb-4">Исправленные адреса:</label>
+                <textarea name="" id="" class="form-control" rows="8"></textarea>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>

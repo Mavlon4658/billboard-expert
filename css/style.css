@@ -638,4 +638,12 @@ footer p {
 }
 .map-add__btns button:hover {
   background: #DC3545;
+}
+
+.geocoder .row {
+  row-gap: 39px;
+}
+.geocoder .collapse textarea {
+  border: 1px solid #DEE2E6 !important;
+  background: #E9ECEF;
 }/*# sourceMappingURL=style.css.map */
