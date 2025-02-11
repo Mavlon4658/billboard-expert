@@ -576,6 +576,28 @@ footer p {
     margin: 48px 0 24px;
   }
 }
+.lmodal-3 .modal-content__head {
+  margin-bottom: 112px;
+}
+@media (max-width: 768px) {
+  .lmodal-3 .modal-content__head {
+    margin-bottom: 0;
+    position: absolute;
+    top: 24px;
+    left: 0;
+    width: 100%;
+    padding: 0 13px;
+    text-align: center;
+  }
+  .lmodal-3 .modal-content__head button {
+    position: absolute;
+    top: 0;
+    right: 19px;
+  }
+}
+.lmodal-3 .modal-content .btn-outline-primary {
+  margin-top: 70px;
+}
 
 .create-card {
   margin-bottom: 137px;
